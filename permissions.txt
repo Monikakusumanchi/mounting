@@ -1,0 +1,4 @@
+#these commands enables the permissions and helps to access the files
+
+sudo chown -R $USER:$USER ./postgres-data
+ls -l ./postgres-data
