@@ -2,3 +2,6 @@
 
 sudo chown -R $USER:$USER ./postgres-data
 ls -l ./postgres-data
+
+sudo chown -R $USER:$USER ./mongodb-data
+chmod +rwx -R ./mongodb-data
