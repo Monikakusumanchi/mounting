@@ -6,7 +6,7 @@ services:
       context: ./docker/postgres
     container_name: postgres-container
     volumes:
-      - ./postgres-data:/var/lib/postgresql/data
+      - postgres-data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
 
@@ -15,7 +15,11 @@ services:
       context: ./docker/mongodb
     container_name: mongodb-container
     volumes:
-      - ./mongodb-data:/data/db
+      - mongodb-data:/data/db
     ports:
       - "27017:27017"
+volumes:
+  postgres-data:
+  mongodb-data:
+
 #docker cp "/workspace/mounting/sales_data_sample - sales_data_sample.csv" 51e:/var/lib/postgresql/data/sales2.csv

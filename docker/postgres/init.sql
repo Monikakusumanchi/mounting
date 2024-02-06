@@ -5,4 +5,4 @@ CREATE TABLE users (
 );
 
 INSERT INTO users (username, email) VALUES ('john_doe', 'john.doe@example.com');
-docker cp "/workspace/mounting/stores data-set.csv" postgres:/var/lib/postgresql/data/stores_data-set.csv
+-- docker cp "/workspace/mounting/stores data-set.csv" postgres:/var/lib/postgresql/data/stores_data-set.csv
