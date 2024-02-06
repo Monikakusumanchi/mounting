@@ -1,7 +1,11 @@
 #these commands enables the permissions and helps to access the files
 
 sudo chown -R $USER:$USER ./postgres-data
+chmod +rwx -R ./postgres-data
+
 ls -l ./postgres-data
 
 sudo chown -R $USER:$USER ./mongodb-data
 chmod +rwx -R ./mongodb-data
+
+docker exec -it 4a5 su -c "initdb -D /var/lib/postgresql/data" postgres
